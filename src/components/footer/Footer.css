@@ -1,0 +1,62 @@
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #f8f8f8;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer_socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h4 {
+    display: inline-block;
+    border-bottom: 3px solid var(--primary-blue);
+    padding-bottom: .2rem;
+}
+.footer .col_a {
+    display: inline-block;
+    border-bottom: 3px solid var(--primary-purpl);
+    padding-bottom: .2rem;
+}
+.social-icons__link{
+    margin-left: 10px;
+    transition: color 0.3s ease
+}
+.social-icons__link:hover {
+    color: var(--primary-purpl);  /* Цвет иконки при наведении (например, синий) */
+}
+
+/* Убедитесь, что fill внутри SVG использует текущий цвет */
+.social-icons__link svg path {
+    fill: currentColor; /* Это позволит иконке принимать цвет родителя */
+}
+.footer .col p {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 940px) {
+    .footer .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer h4 {
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
